@@ -1,0 +1,206 @@
+<!DOCTYPE html> <!-- Сообщает браузеру стандарт HTML документа -->
+<html lang="en"> <!-- Основной тег, содержащий весь HTML-код -->
+<head> <!-- Голова. Информация для браузера и поисковых машин -->
+
+	<meta charset="UTF-8"> <!-- Кодировка страницы -->
+	<meta author="Albert Hoffman"> <!-- Автор страницы -->
+	<meta keywords="LSD, Lizer, Lucy, LSD book"> <!-- Ключевые слова -->
+
+	<title>My sources</title> <!-- Название страницы -->
+
+	<style>
+		table, th, td {border: 1px solid black;}
+		table {border-collapse: collapse; width: 100%;}
+	</style>
+
+	<link rel="stylesheet" href="style.css"> <!-- Указывает путь к CSS -->
+
+	<script src="main.js"></script><!-- Указывает путь к JS -->
+</head>
+<body> <!-- Тело. Визуальное содержимое страницы -->
+	
+	<!-- Текстовые теги -->
+	<!-- Заголовки -->
+	<h1>Заголовок 1 уровня</h1> <!-- Встреается не чаще, чем 1 раз -->
+	<h2>Заголовок 2 уровня</h2>
+	<h3>Заголовок 3 уровня</h3>
+	<h4>Заголовок 4 уровня</h4>
+	<h5>Заголовок 5 уровня</h5>
+	<h6>Заголовок 6 уровня</h6>
+
+	<p>Существуют переживания, о которых большинство из нас не решаются говорить, поскольку они не вписываются в повседневную реальность и бросают вызов рациональным объяснениям</p> <!-- Параграф -->
+
+	<!-- Декорирование текста -->
+	<b></b> <!-- Жирный текст -->
+  <strong></strong> <!-- Жирный важный текст -->
+  <i></i> <!-- Курсив -->
+	<em></em> <!-- Курсив важный текст -->
+	<u></u> <!-- Подчёркнутый текст -->
+	<s></s> <!-- Зачёркнутый текст -->
+	<sub></sub> <!-- Нижний индекс -->
+	<sup></sup> <!-- Верхний индекс -->
+	<span></span> <!-- Кастомное оформление -->
+	<mark></mark> <!-- Выделение маркером -->
+
+	<!-- Списки -->
+	<!-- Маркерованный список -->
+	<ul>
+		<li>Первый пункт <!-- Пункт -->
+			<ul>
+				<li>Первый подпункт</li> <!-- Пункт внутри пункта -->
+			</ul>
+		</li>
+		<li>Второй пункт</li>
+	</ul>
+
+	<!-- Нумерованный список -->
+	<ol type="I"> <!-- A/I/1 задает систему нумерации списка -->
+		<li>Первый пункт</li>
+		<li>Второй пункт</li>
+	</ol>
+
+
+	<!-- Ссылки -->
+	<!-- Внешние ссылки -->
+	<a href="LSD-my-problem-child.txt">ЛСД - мой трудный ребёнок</a> <br> <!-- Ссылка на документ -->
+	<a href="https://google.com">Поисковая система Google</a> <br> <!-- Ссылка на другой сайт -->
+	<a href="index.html">Главная страница</a> <br> <!-- Ссылка на HTML-документ -->
+
+	<!-- Внутренние (якорные) ссылки -->
+	<h2 id="link-1">Заголовок с уникальным ID link-1</p>
+	<a href="#link-1">Якорная ссылка link-1</a> <br>
+
+	<!-- Ссылка на телефон -->
+	<a href="tel:+380680867497">+380680867497</a> <br>
+	<!-- Ссылка на почту -->
+	<a href="mailto:mail@gmail.com">mail@gmail.com</a> <br>
+	<!-- Ссылка на скайп -->
+	<a href="skype:login?chat">Skype</a> <br>
+	<!-- Ссылка на скачивание документа -->
+	<a download href="LSD-my-problem-child.epub">Скачивание книги</a> <br>
+	<!-- Ссылка на другой сайт в новой вкладке -->
+	<a target="_blank" href="https://google.com">Ссылка на Google в новой вкладке</a> <br>
+
+
+	<!-- Изображения -->
+	<!-- Абсолютный путь до изображения -->
+	<img src="https://yummyanime.club/img/posters/1570976911.jpg" alt="Постер Хвост Феи"> <br>
+	<!-- Относительный путь до изображения -->
+	<img src="../synthwave.jpg" alt="Synthwave picture" height="900px" width="600px"> <br><!-- height и width указывают высоту и ширину картинки в пикселях -->
+	<!-- Кликабельная ссылка -->
+	<a href="https://yummyanime.club/catalog/item/golubye-nebesa-romeo"><img src="https://yummyanime.club/img/posters/1534267666.jpg" alt="Постер аниме"></a>
+
+
+	<!-- Создание таблицы -->
+	<table>
+		<!-- Table Row - новая строка таблицы -->
+		<tr> 
+			<!-- Table Header - заголовок таблицы -->
+			<th>Заголовок 1</th>
+			<th>Заголовок 2</th>
+		</tr>
+
+		<tr>
+			<!-- Ячейка таблицы -->
+			<td>Ячейка 1</td>
+			<td>Ячейка 2</td>
+		</tr>
+		<!-- Подпись таблицы -->
+		<caption>Таблица номер 1</caption>
+	</table>
+
+
+	<!-- Универсальные атрибуты тегов -->
+	<!-- Объединение элементов по группам -->
+	<p class="text"></p>
+	<!-- Указание идентификатора для якорной ссылки -->
+	<p id="text"></p>
+	<!-- Режим редактирования -->
+	<p contenteditable="true"></p>
+	<!-- Кастомный атрибут -->
+	<p data-time="0.2s"></p>
+	<!-- Скрывает элемент -->
+	<p hidden></p>
+	<!-- Определяет язык текста -->
+	<p lang="Russian"></p>
+	<!-- Определяет правописание текста -->
+	<p spellcheck="true"></p>
+	<!-- Порядок переключения между элементами через Tab -->
+	<p tabindex="text"></p>
+	<!-- Подсказка при наведении на элемент -->
+	<p title="Пасхалочка"></p>
+
+
+	<!-- Сематические теги -->
+	<!-- Шапка -->
+	<header></header>
+	<!-- Меню навигации -->
+	<nav></nav>
+	<!-- Статья -->
+	<article></article>
+	<!-- Группировка секций -->
+	<section>
+		<h2>Заголовок секции</h2>
+	</section>
+	<!-- side-bar -->
+	<aside>
+		<nav></nav>
+	</aside>
+	<!-- Подвал -->
+	<footer></footer>
+	<!-- Контектная информация -->
+	<address></address>
+	<!-- Основное и уникальное содержимое -->
+	<main></main>
+	<!-- Автономный контент -->
+	<figure>
+		<img src="../synthwave.jpg" width="200px" alt="Synthwave">
+		<figcaption>
+			Описание картинки
+		</figcaption>
+	</figure>
+  <!-- Указывает время элементов -->
+	<time datetime="2017-10-10">10 октября 2017 года</time> <br> <br>
+
+
+	<!-- Формы -->
+	<!-- Контейнер -->
+	<form action="#" autocomplete="on" enctype="text/plain" method="GET" target="_blank">
+		<fieldset>
+			<legend>
+				Анкета пользователя
+			</legend>
+
+			<label for="user-name">Введите имя</label>
+			<input id="user-name" type="text" placeholder="Например, Иван" required maxlength="5" minlength="2" autocomplete="on" autofocus disabled name="user-name" value="Иван">
+
+			<label for="#">Введите номер телефона</label>
+			<input type="tel" placeholder="+7 999 999 99 99"> <br>
+
+			<label for="#">Введите email</label>
+			<input type="email" required> <br>
+
+			<label for="#">Ваше любимое блюдо</label> <br>
+
+			<label for="pizza">Пицца</label>
+			<input type="radio" id="pizza" name="food" required>
+
+			<label for="beer">Пиво</label>
+			<input type="radio" id="beer" name="food" required> <br>
+
+			<!-- Кнопка отправить -->
+			<input type="submit" value="Послать">
+
+		</fieldset>
+
+		<fieldset>
+			<legend>
+				Данные пользователя
+			</legend>
+		</fieldset>
+	</form>
+
+
+
+</body>
+</html>
